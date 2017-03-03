@@ -37,16 +37,16 @@ This technique is used to eliminate random features or variables in a dataset th
 Here, the algorithm is assigned a deterministic goal, like successfuly driving a car from point A to point B, winning a game of Go, or completing a level in a video game. Based on its perfomance, punishments or rewards are given to incentvize correct actions and thus hone the algorithm's skill over time as it makes many attempts.
 
 ## A closer look at Supervised learning
-Here we dive deeper into supervised learning and what is entailed by solving logistic regression and classification problems. Consider the following two examples:
-
-
+Here we dive deeper into supervised learning and what is entailed by solving logistic regression and classification problems. 
 ### Objective
+Supervised learning is essentially an optimization problem. You have a data set, consisting of different features that, based on their configuration, have produced a specific output. The task of the algorithm is to produce a model based on this data that can make as accurate predictions as possible on new data, data that has not been used to train the model.
 
 Features
 Cost function
 Minimise 
 
 Algorithms
+Overfitting vs Underfitting
 
 ## Basic work process
 Iterative and experimental. Determine features. Source data. Clean data.
