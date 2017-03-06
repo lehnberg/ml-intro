@@ -1,13 +1,8 @@
 # Introduction to Machine Learning: Supervised learning
-This document is a layman's primer on some of the general concepts in
-Machine Learning, with an emphasis put on Supervised learning concepts. It
-assumes no prior knowledge and is not exhaustive.
-
+This document introduces some of the general concepts in Machine Learning, with an emphasis on Supervised learning. It assumes no prior knowledge and offers only very high level infroduction to the field.
 ## Definition and use 
 In 1959, Arthur Samuel defined Machine learning as "the subfield of computer science that gives computers the ability to learn without being explicitly programmed". It utilises algorithms to infer decisions, tasks, outcomes, learnings, and predictions based on data.
-
 Its applications are many, but is most valuable where hard-coded programmatic instructions in explicit form would be impractical or inefficient. A couple of examples of use cases are Email spam filters, Character recognition, Speech detection, and Language translation. In these use cases, the algorithms deployed essentially learn and adapt their behaviour based on data. 
-
 Rather than a programmer having to think of all the ways a potential spammer could write spam, and then define rules to filter these out, the algorithm is able to infer rules to apply by comparing spam and non-spam emails. 
 
 ## Terminology
@@ -20,14 +15,14 @@ Output | The prediction of the algorithm based on analysing the data.|
 
 ## Types of Machine Learning
 ### Supervised learning
-This is distinguished by feeding the algorithm both _inputs_ (i.e. features) as well as _desired outputs_ (i.e. desired  predictions) by a teacher. In the process, we train the algorithm to determine patterns in the features that drive predictions that correspond to those in the data it had access to. In the example of our house price prediction algorithm, we would include car data that included both the features we had chosen (Make, model, etc) as well as the actual corresponding outputs (i.e. actual prices those cars had sold for). This would then allow the algorithm to make output predictions based on new, previously unseen data with the same features.
+This is distinguished by feeding the algorithm both _inputs_ (i.e. features) as well as _desired outputs_ (i.e. desired  predictions) by a teacher. In the process, we train the algorithm to determine patterns in the features that drive predictions that correspond to those in the data it had access to. In the example of our car sale price prediction algorithm, we would include car data that included both the features we had chosen (Make, model, etc) as well as the actual corresponding outputs (i.e. actual prices those cars had sold for). This would then allow the algorithm to make output predictions based on new, previously unseen data with the same features.
 
 #### Logistic regression
 A type of supervised learning problem, logistic regression is used to make predictions on a continuous scale. Treating our used car sale prediction algorithm as a logistic regression problem, we would be able to predict the sale price as the output. Another example would be to use previous race data to predict the time it would take for an athlete to run 100m given certain conditions. Since time and money are on a continuous scale, logistic regression is suitable.   
 #### Classification
 Another type of supervised learning is classification. Here, the algorithm is used to make binary predictions, to label the data. In our car price prediction alogrithm, we could use classification to generate predictions on whether a car would sell above $100k (yes/no). Or the type of animal that is displayed on a photograph (dog/cat/bird/neither). Or to determine whether an email received should be marked as "spam" or "not spam".
 ### Unsupervised learning
-In unsupervised learning, the role of the trainer is removed and you are not labeling the data. The machine learning algorithm is left to best make sense of the data on its own. It can be an end in itself (to understand properties and patterns of a dataset), or it could help achieve a wider goal (by identifiying features to be used in Supervised learning). 
+In unsupervised learning, the role of the trainer is removed and we are not labeling the data. Instead the machine learning algorithm is left to best make sense of the data on its own. It can be an end in itself (to understand properties and patterns of a dataset), or it could help achieve a wider goal (by identifiying features to be used in Supervised learning). 
 #### Clustering
 Similarly to a Classification problem, in Clustering data is sorted into groups. Only here the types of clusters are not known in advance. An example of clustering is news agreggation, identifying patterns of similarity in texts and articles.  
 #### Dimension reduction
@@ -43,7 +38,7 @@ There is little point in trying to design the perfect model from the start, and 
 ### Selecting an Algorithm
 There is a [myriad](https://en.wikipedia.org/wiki/Machine_learning#Approaches) of Machine Learning algorithms, everything from ever so popular Neural Networks to traditional linear regression algorithms like Gradient Descent. It's less important which algorithm you start with, what matters is that you begin the effort and can see how it performs against your dataset. Pick an algorithm that's simple enough for you to be able to implement fast, and then take it from there.
 ### Working with data 
-The fewer features you have to drive a model that produces high accuracy, the better. Naturally, the more sample data you can obtain for these features, the better. In general, the availability of data tends to beat sophisiticated optimization algorithms. The first step once data is obtained will be to clean it, feature scale it, and mean normalise it, in order to imprve the performance. The data is then split into three distinct sets:
+The fewer features you have to drive a model that produces high accuracy, the better. Naturally, the more sample data you can obtain for these features, the better. In general, the availability of data tends to beat sophisiticated optimization algorithms. The first step once data is obtained will be to clean it, feature scale it, and mean normalise it, in order to improve performance. The data is then split into three distinct sets:
 
 1. **Training set**, used to build the model (60-80% of all data)
 
