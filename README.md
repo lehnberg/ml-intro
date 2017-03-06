@@ -26,7 +26,6 @@ This is distinguished by feeding the algorithm both _inputs_ (i.e. features) as 
 A type of supervised learning problem, logistic regression is used to make predictions on a continuous scale. Treating our used car sale prediction algorithm as a logistic regression problem, we would be able to predict the sale price as the output. Another example would be to use previous race data to predict the time it would take for an athlete to run 100m given certain conditions. Since time and money are on a continuous scale, logistic regression is suitable.   
 #### Classification
 Another type of supervised learning is classification. Here, the algorithm is used to make binary predictions, to label the data. In our car price prediction alogrithm, we could use classification to generate predictions on whether a car would sell above $100k (yes/no). Or the type of animal that is displayed on a photograph (dog/cat/bird/neither). Or to determine whether an email received should be marked as "spam" or "not spam".
-
 ### Unsupervised learning
 In unsupervised learning, the role of the trainer is removed and you are not labeling the data. The machine learning algorithm is left to best make sense of the data on its own. It can be an end in itself (to understand properties and patterns of a dataset), or it could help achieve a wider goal (by identifiying features to be used in Supervised learning). 
 #### Clustering
@@ -36,14 +35,10 @@ This technique is used to eliminate random features or variables in a dataset th
 ### Reinforcement learning
 Here, the algorithm is assigned a deterministic goal, like successfuly driving a car from point A to point B, winning a game of Go, or completing a level in a video game. Based on its perfomance, punishments or rewards are given to incentvize correct actions and thus hone the algorithm's skill over time as it makes many attempts.
 
-## A closer look at Supervised learning
+## A closer look at working with Supervised learning
 Here we dive deeper into supervised learning and what is entailed by solving logistic regression and classification problems. 
 ### Objective
-Supervised learning is essentially an optimization problem. You have a data set, consisting of different features that, based on their configuration, have produced a specific output. The task of the algorithm is to produce a model based on this data that can make as accurate predictions as possible on new data, data that has not been used to train the model.
-
-Features
-Cost function
-Minimise 
+Supervised learning is essentially an optimization problem. You have a data set, consisting of different features that, based on their configuration, have produced a specific output. The task of the algorithm is to produce a model based on this data that can make as accurate predictions as possible. These predictions will seldomly be entirely accurate. The _true value_ will differ from the by the model _predicted value_. As the true value is known in the training data, the model can work to minimize the difference between those and its predictions. This difference is referred to as the _Cost_, and the lower the cost, the more inline the predictions are with the actual results.
 
 Algorithms
 Overfitting vs Underfitting
