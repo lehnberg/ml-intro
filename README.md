@@ -56,7 +56,7 @@ Regularization is a mathematical tool that can be used to introduce more data in
 #### Classification errors
 When working on classification errors, you can get insights from understanding the types of errors the model makes, as per below.
 
- | Actual Spam | Actual Non-Spam
+ Outcome | Actual Spam | Actual Non-Spam
 ----|-----|--------
 **Predicted Spam** | True Positive | False Positive 
 **Predicted Non-Spam** | False Negative | True Negative
